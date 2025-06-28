@@ -5,7 +5,11 @@ import org.example.healthtrack.repository.ActivitePhysiqueRepository;
 import org.springframework.stereotype.Service;
 
 @Service
-@AllArgsConstructor
+//@AllArgsConstructor
 public class ActivitePhysiqueService {
+    public ActivitePhysiqueService(ActivitePhysiqueRepository activitePhysiqueRepository) {
+        this.activitePhysiqueRepository = activitePhysiqueRepository;
+    }
+
     private final ActivitePhysiqueRepository activitePhysiqueRepository;
 }
